@@ -4,10 +4,8 @@ import string
 from pathlib import Path
 import streamlit as st
 
-
-# -------------------------------
 # BANK CLASS
-# -------------------------------
+
 class Bank:
     database = 'data.json'
     data = []
@@ -39,9 +37,8 @@ class Bank:
         random.shuffle(acc)
         return "".join(acc)
 
-    # -----------------------------
-    # Bank operations
-    # -----------------------------
+
+# Bank operations
 
     def createaccount(self, name, age, email, pin):
         if age < 18 or len(str(pin)) != 4:
@@ -121,9 +118,9 @@ class Bank:
         return "Account deleted successfully."
 
 
-# -------------------------------
+
 # STREAMLIT APP UI
-# -------------------------------
+
 st.set_page_config(page_title="Bank Management System", layout="centered")
 st.title("Bank Management System")
 
