@@ -124,8 +124,8 @@ class Bank:
 # -------------------------------
 # STREAMLIT APP UI
 # -------------------------------
-st.set_page_config(page_title="💰 Bank Management System", layout="centered")
-st.title("🏦 Bank Management System")
+st.set_page_config(page_title="Bank Management System", layout="centered")
+st.title("Bank Management System")
 
 bank = Bank()
 
@@ -134,7 +134,7 @@ choice = st.sidebar.selectbox("Select Operation", menu)
 
 # CREATE ACCOUNT
 if choice == "Create Account":
-    st.subheader("🧾 Create New Account")
+    st.subheader("Create New Account")
     name = st.text_input("Enter your name")
     age = st.number_input("Enter your age", min_value=0, step=1)
     email = st.text_input("Enter your email")
@@ -149,7 +149,7 @@ if choice == "Create Account":
 
 # DEPOSIT MONEY
 elif choice == "Deposit Money":
-    st.subheader("💵 Deposit Money")
+    st.subheader("Deposit Money")
     acc = st.text_input("Account Number")
     pin = st.text_input("PIN", type="password")
     amount = st.number_input("Amount to deposit", min_value=1, step=1)
@@ -159,7 +159,7 @@ elif choice == "Deposit Money":
 
 # WITHDRAW MONEY
 elif choice == "Withdraw Money":
-    st.subheader("💸 Withdraw Money")
+    st.subheader("Withdraw Money")
     acc = st.text_input("Account Number")
     pin = st.text_input("PIN", type="password")
     amount = st.number_input("Amount to withdraw", min_value=1, step=1)
@@ -169,7 +169,7 @@ elif choice == "Withdraw Money":
 
 # SHOW DETAILS
 elif choice == "Show Details":
-    st.subheader("📜 Account Details")
+    st.subheader("Account Details")
     acc = st.text_input("Account Number")
     pin = st.text_input("PIN", type="password")
 
@@ -182,7 +182,7 @@ elif choice == "Show Details":
 
 # UPDATE DETAILS
 elif choice == "Update Details":
-    st.subheader("🛠 Update Account Details")
+    st.subheader("Update Account Details")
     acc = st.text_input("Account Number")
     pin = st.text_input("Old PIN", type="password")
     name = st.text_input("New Name (leave blank to skip)")
@@ -194,7 +194,7 @@ elif choice == "Update Details":
 
 # DELETE ACCOUNT
 elif choice == "Delete Account":
-    st.subheader("🗑 Delete Account")
+    st.subheader("Delete Account")
     acc = st.text_input("Account Number")
     pin = st.text_input("PIN", type="password")
 
