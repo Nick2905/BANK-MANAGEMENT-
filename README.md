@@ -22,28 +22,9 @@ Database	JSON File (data.json)
 Modules Used	json, random, string, pathlib, streamlit
 📂 Project Structure
 📦 Bank-Management-System
- ┣ 📜 app.py                # Main Streamlit Application
+ ┣ 📜 bank_app.py                # Main Streamlit Application
  ┣ 📜 data.json             # Stores all user account data
  ┣ 📜 README.md             # Project documentation
- 
-
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/yourusername/bank-management-system.git
-cd bank-management-system
-
-2️⃣ Install Dependencies
-
-Make sure you have Python installed. Then run:
-
-pip install streamlit
-
-3️⃣ Run the Application
-streamlit run app.py
-
-4️⃣ Access in Browser
-
-Go to 👉 http://localhost:8501
 
 🧩 How It Works
 
@@ -54,8 +35,6 @@ Account details are saved inside data.json.
 Each transaction (deposit/withdraw) updates the file automatically.
 
 PIN-based authentication ensures account security.
-
-
 
 🧠 Future Enhancements
 
